@@ -1,35 +1,41 @@
 body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: 'Arial', sans-serif;
 }
 
-/*  id="lupa"        cuando sea para un solo elemento */
 #lupa {
     color: #80868b;
     width: 40px;
-    height:50px;
+    height: 50px;
 }
 
-/*  class="icono"    cuando sea para uno o más elementos                           */
 .icono {
     width: 50px;
-    height:50px;
+    height: 50px;
+}
+#cuadro {
+    width: 30px; /* Ajusta el ancho según tus preferencias */
+    height: 30px; /* Ajusta la altura según tus preferencias */
 }
 
-main li img
-{
+#cuadro svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+main li img {
     width: 300px;
-    height:100px;
+    height: 100px;
 }
 
-header ul{
+header ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px;
-    
 }
 
 header ul li img {
@@ -41,15 +47,13 @@ header ul li img {
 
 header a {
     text-decoration: none;
-    color: #151414;
+    color: #141415; /* Color azul característico de Google */
     font-family: 'Arial', sans-serif;
 }
 
-header ul li{
+header ul li {
     margin: 10px;
-    
 }
-
 
 main {
     height: 70vh;
@@ -71,7 +75,8 @@ main {
 }
 
 #caja-buscador input {
-    width: 400px;
+    width: 100%; /* Modificado para ocupar todo el ancho disponible */
+    padding: 10px; /* Añadido espacio interno */
     outline: none;
     border: none;
 }
@@ -81,69 +86,94 @@ main {
 }
 
 button {
-    background-color: #e1e5e9;
-    border: #dfe1e5;
+    background-color: #f8f9fa; /* Color de fondo más claro */
+    border: 1px solid #dfe1e5;
     height: 36px;
-    min-width: 80px; /* Aumenta el ancho mínimo de los botones */
+    min-width: 80px;
     margin: 10px 4px;
     padding: 0 16px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 footer {
     background-color: #f2f2f2;
-    padding: 5px; /* Añadido espacio interno al pie de página */
+    padding: 5px;
 }
 
-footer ul{
-    
+footer ul {
     list-style-type: none;
     display: flex;
     align-items: center;
 }
 
-footer ul li{
-    
+footer ul li {
     margin: 10px;
 }
 
 #opciones {
-    
     display: flex;
 }
 
-
-
-/* Añadido estilo para el contenedor de opciones en el pie de página */
 footer #opciones {
-    margin-left: auto; /* Mueve el contenedor al extremo derecho */
-    border-top: 1px solid #c1c4c8; /* Añadido borde superior */
-    padding-top: 0px; /* Espaciado superior para separar del contenido anterior */
+    margin-left: auto;
+    border-top: 1px solid #c1c4c8;
+    padding-top: 10px; /* Ajustado el espaciado superior */
 }
 
-/* Alineación de los elementos en el contenedor de opciones */
 footer #opciones ul {
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    justify-content: flex-end;
 }
 
-/* Espaciado entre los elementos en el contenedor de opciones */
 footer #opciones ul li {
     margin: 10px;
 }
 
-/* Estilo de los enlaces en el pie de página */
 footer a {
     text-decoration: none;
-    color: #151414;
+    color: #5f6368; /* Color de texto gris característico de Google */
     font-family: 'Arial', sans-serif;
 }
 
-/* Cambiado estilo de los enlaces al pasar el mouse */
 footer a:hover {
     text-decoration: underline;
+    color: #000; /* Cambio de color al pasar el ratón */
 }
 
 
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
 
+footer ul li {
+    margin: 10px;
+}
+
+#opciones {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    width: 100%; /* Asegura que los elementos ocupen todo el ancho del contenedor */
+}
+
+#opciones ul {
+    display: flex;
+}
+
+#opciones ul li {
+    margin: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+    font-family: 'Arial', sans-serif;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #000;
+}
